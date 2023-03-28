@@ -3,9 +3,6 @@ pluginManagement {
         google()
         jcenter()
         mavenCentral()
-        maven { url 'https://maven.calldorado.com/nexus/content/repositories/releases' }
-        maven { url 'https://maven.calldorado.com/nexus/content/repositories/thirdparty/' }
-        maven {url 'https://artifact.bytedance.com/repository/pangle'}
     }
 }
 dependencyResolutionManagement {
@@ -13,6 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://maven.calldorado.com/nexus/content/repositories/releases' }
+        maven { url 'https://maven.calldorado.com/nexus/content/repositories/thirdparty/' }
+        maven {url 'https://artifact.bytedance.com/repository/pangle'}
+
     }
 }
 rootProject.name = "My Application"
